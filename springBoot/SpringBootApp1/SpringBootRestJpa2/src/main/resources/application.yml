@@ -8,3 +8,5 @@ spring:
     username:  root
     password:  mysql
     driver-class-name:  com.mysql.cj.jdbc.Driver
+server:
+  port:  9090
