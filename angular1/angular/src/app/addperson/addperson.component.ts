@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Person } from '../person-app/model/person';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -18,7 +19,7 @@ export class AddpersonComponent {
   msg: string = 'welcome';
   @Input() person: Person;
 
-  constructor(private service: PersonService) {
+  constructor(private service: PersonService,private route:Router) {
     this.person = new Person();
   }
 
@@ -26,4 +27,9 @@ export class AddpersonComponent {
     this.service.addPerson(this.person).subscribe(data => this.msg = "Record Added", error => this.msg = error.error);
     console.log(this.msg)
   }
+
+  showAll(){
+  this.route.navigate(['/person-all-data'])
+  }
+  
 }
