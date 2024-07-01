@@ -1,5 +1,4 @@
 export const address=[
-
     {
         "addr_id":80001,
         "location":"laxminagar",
