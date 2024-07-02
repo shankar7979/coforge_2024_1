@@ -37,7 +37,6 @@ export const PersonForm1 = (props) => {
                             onChange={(e) => {
                                 setName(e.target.value)
                                 if (e.target.value == '')
-                                   
                                     setErrName('name is blank')
                             }}
                         ></input>
