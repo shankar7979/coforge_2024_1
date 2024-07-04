@@ -50,3 +50,4 @@ public class Main implements CommandLineRunner {
 
 //https://stackoverflow.com/questions/34897343/disable-cascade-in-manytoone-relationship-jpa-when-saving
 //https://stackoverflow.com/questions/7197181/jpa-unidirectional-many-to-one-and-cascading-delete
+https://vladmihalcea.com/the-best-way-to-map-a-onetomany-association-with-jpa-and-hibernate/
