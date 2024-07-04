@@ -32,9 +32,6 @@ public class Main implements CommandLineRunner {
         Employee employee1 = new Employee();
         Employee employee2 = new Employee();
         Employee employee3 = new Employee();
-        empList.add(employee1);
-        empList.add(employee2);
-        empList.add(employee3);
 
 
         employee1.setName("ram kumar");
@@ -45,22 +42,29 @@ public class Main implements CommandLineRunner {
         employee2.setAddress(address);
         employee3.setAddress(address);
 
+        empList.add(employee1);
+        empList.add(employee2);
+        empList.add(employee3);
+
+
         address.setEmpList(empList);
 
 //        repository.save(employee1);
 //        repository.save(employee2);
 //        repository.save(employee3);
 
+//        for (Employee e : empList)
+//            e.setAddress(address);
+
         addressRepository.save(address);
 
-      // addressRepository.findAll().forEach(a -> System.out.println(a));
+        // addressRepository.findAll().forEach(a -> System.out.println(a));
 
-           for (Address a : addressRepository.findAll()) {
+        for (Address a : addressRepository.findAll()) {
             System.out.println(a.getAddr_id() + "\t" + a.getLocation());
             for (Employee e : a.getEmpList())
                 System.out.println(e.getId() + "\t" + e.getName());
         }
-
     }
 }
 //https://stackoverflow.com/questions/34897343/disable-cascade-in-manytoone-relationship-jpa-when-saving
