@@ -43,7 +43,7 @@ public class Main implements CommandLineRunner {
         repository.save(employee2);
         repository.save(employee3);
 
-        repository.findAll().forEach(a -> System.out.println(a));
+       // repository.findAll().forEach(a -> System.out.println(a));
 
     }
 }

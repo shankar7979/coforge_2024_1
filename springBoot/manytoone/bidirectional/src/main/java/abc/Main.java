@@ -55,6 +55,12 @@ public class Main implements CommandLineRunner {
 
       // addressRepository.findAll().forEach(a -> System.out.println(a));
 
+           for (Address a : addressRepository.findAll()) {
+            System.out.println(a.getAddr_id() + "\t" + a.getLocation());
+            for (Employee e : a.getEmpList())
+                System.out.println(e.getId() + "\t" + e.getName());
+        }
+
     }
 }
 //https://stackoverflow.com/questions/34897343/disable-cascade-in-manytoone-relationship-jpa-when-saving
