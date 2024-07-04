@@ -16,5 +16,6 @@ public class Employee {
     @ManyToOne//(cascade = CascadeType.ALL)
     private Address address;
 
+ //Many Employee with on address
 
 }

@@ -53,5 +53,8 @@ public class EmployeeMain {
 		session.save(department);
 		transaction.commit();
 
+
+
+
 	}
 }
