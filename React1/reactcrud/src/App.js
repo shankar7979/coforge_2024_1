@@ -3,9 +3,10 @@ import './App.css';
 import PersonForm from './PersonForm';
 import {PersonForm1} from './PersonForm1';
 import { PersonGetAll } from './PersonGetAll';
-import { Reacthookform } from './Reacthookform';
+import { Reacthookform } from './form/Reacthookform';
 import { AddPerson } from './AddPerson';
-import App1 from './App1';
+import Form1 from './form/Form1';
+
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
      {/* <PersonForm1></PersonForm1> */}
      {/* <PersonGetAll></PersonGetAll> */}
      {/* <Reacthookform></Reacthookform> */}
-     <AddPerson></AddPerson>
+     {/* <AddPerson></AddPerson> */}
      {/* <App1></App1> */}
+     <Form1></Form1>
     </div>
   );
 }
