@@ -6,6 +6,7 @@ import { PersonComponent } from './person/person.component';
 import { PersonAppComponent } from './person-app/person-app.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { AddpersonComponent } from './addperson/addperson.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 export const routes: Routes = [
 
@@ -35,6 +36,9 @@ export const routes: Routes = [
     },
     {
         path: 'addperson', component: AddpersonComponent
+    },
+    {
+        path: 'reactive', component: ReactiveFormComponent
     }
 
 ];

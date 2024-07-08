@@ -7,13 +7,14 @@ import { PersonComponent } from './person/person.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { PersonAppComponent } from './person-app/person-app.component';
 import { AddpersonComponent } from './addperson/addperson.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,EmployeeComponent,CustomerComponent,CalculatorComponent,
   PersonComponent,TemplateFormComponent,PersonAppComponent,
-  RouterLink,AddpersonComponent
+  RouterLink,AddpersonComponent,ReactiveFormComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
