@@ -1,0 +1,5 @@
+https://github.com/MossaabFrifita
+https://github.com/MossaabFrifita/devops-jenkins-ci-cd
+
+https://github.com/MossaabFrifita/angular-16-jwt-authentication-authorization
+https://github.com/MossaabFrifita/spring-boot-3-security-6-jwt
