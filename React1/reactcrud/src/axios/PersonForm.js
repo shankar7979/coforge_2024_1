@@ -15,8 +15,6 @@ export default class PersonForm extends Component {
             show: true
         }
     }
-    
-
 
     changeId = (event) => {
         if (event.target.value == '')

@@ -20,10 +20,10 @@ const UserForm1 = () => {
           <label>Email</label>
           <div>
             <input
-              className={`${errors.email && "inputError"}`}
+            
               name="email"
               type="email"
-              value={values.email}
+              
               onChange={handleChange}
             />
             {errors.email && <p className="error">{errors.email}</p>}
@@ -49,17 +49,19 @@ const UserForm1 = () => {
 };
 
 export default UserForm1;
-// form
-// label / input for email
-// label / input for password
-// signup button
+/*
+form
+label / input for email
+label / input for password
+signup button
 
-// handle changes
-// handle submit
+handle changes
+handle submit
 
-// custom react hook
+custom react hook
 
-// handle errors
-// show errors if there are errors
+handle errors
+show errors if there are errors
 
-//export default Form;
+export default Form;
+*/

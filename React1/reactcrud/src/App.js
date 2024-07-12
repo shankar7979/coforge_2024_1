@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       {/* <PersonForm>      
-     </PersonForm> */}
+    //  </PersonForm> */}
       {/* <PersonForm1></PersonForm1> */}
       {/* <PersonGetAll></PersonGetAll> */}
       {/* <Reacthookform></Reacthookform> */}
@@ -23,7 +23,7 @@ function App() {
       {/* <App1></App1> */}
       {/* <Form1></Form1> */}
       {/* <Form2></Form2> */}
-      {/* <UserForm1></UserForm1> */}\
+      <UserForm1></UserForm1>
       <Test></Test>
     </div>
   );
