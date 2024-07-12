@@ -7,6 +7,8 @@ import axios from 'axios';
 export const AddPerson = (props) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
+        //alert(JSON.stringify(data))
+        console.log('id is '+data.id+'\nname is '+data.name)
         axios.post('http://localhost:9090/allPerson', data).then(result => {
             props.history.push("/");
         })

@@ -9,20 +9,28 @@ function Form2() {
 
     return (
         <>
+        <div className="bg-info w-50 p-5 m-5">
             <h1>Order weather</h1>
             <form onSubmit={handleSubmit(onSubmitButton)}>
+                <div className="form-group">
+            
                 <input
                     {...register("fullName")}
                     type="text"
                     placeholder="Name and surname"
-                    id="name"
+                    id="name" className="form-control"
                 />
+                </div>
+                <div className="form-group">
+                            
                 <input
                     {...register("city")}
                     type="text"
                     placeholder="City"
-                    id="city"
+                    id="city" className="form-control"
                 />
+                </div>
+                <div className="form-group">
                 <p>I would like to:</p>
                 <label htmlFor="field-rain">
                     <input
@@ -30,9 +38,11 @@ function Form2() {
                         type="radio"
                         value="rain"
                         id="field-rain"
+                
                     />
                     Rain
                 </label>
+                
                 <label htmlFor="field-wind">
                     <input
                         {...register("weather")}
@@ -42,6 +52,7 @@ function Form2() {
                     />
                     Lots of wind
                 </label>
+                
                 <label htmlFor="field-sun">
                     <input
                         {...register("weather")}
@@ -51,10 +62,15 @@ function Form2() {
                     />
                     Sunny
                 </label>
+                </div>
                 <button type="submit">
                     Send
                 </button>
             </form>
+            <div>
+                
+            </div>
+            </div>
         </>
     );
 }
